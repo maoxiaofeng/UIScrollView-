@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o83-Fz-UB2">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--滚动视图-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLK-C8-dPu">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUx-Gj-JO0">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="600" id="uql-xx-E0x"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xUx-Gj-JO0" firstAttribute="top" secondItem="GLK-C8-dPu" secondAttribute="top" id="6fZ-uD-vsy"/>
+                                    <constraint firstItem="xUx-Gj-JO0" firstAttribute="centerX" secondItem="GLK-C8-dPu" secondAttribute="centerX" id="7Cs-IF-kq2"/>
+                                    <constraint firstAttribute="bottom" secondItem="xUx-Gj-JO0" secondAttribute="bottom" id="pjN-Ia-gsS"/>
+                                    <constraint firstItem="xUx-Gj-JO0" firstAttribute="leading" secondItem="GLK-C8-dPu" secondAttribute="leading" id="ucv-R6-zmp"/>
+                                    <constraint firstAttribute="trailing" secondItem="xUx-Gj-JO0" secondAttribute="trailing" id="xvW-4D-NYT"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4kn-BR-Qhg"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GLK-C8-dPu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9ru-NP-ofO"/>
+                            <constraint firstAttribute="trailing" secondItem="GLK-C8-dPu" secondAttribute="trailing" id="VPX-fk-r6z"/>
+                            <constraint firstItem="GLK-C8-dPu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aff-DW-mHS"/>
+                            <constraint firstAttribute="bottom" secondItem="GLK-C8-dPu" secondAttribute="bottom" id="exK-2l-ct9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="滚动视图" id="Xuf-fi-Wxb"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="scrollView" destination="GLK-C8-dPu" id="FPS-jm-LvF"/>
+                        <outlet property="viewHeight" destination="uql-xx-E0x" id="HiA-ob-qOx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="430"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aFO-Rs-9eN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o83-Fz-UB2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mdz-Yg-gSV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pNm-qp-ooK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGg-uL-AOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-353" y="430"/>
+        </scene>
+    </scenes>
+</document>

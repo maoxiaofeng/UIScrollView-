@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>W6K9Q22JTP.com.zjhcsoft.mobile.LingHang.UIScrollView----</string>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>W6K9Q22JTP.com.zjhcsoft.mobile.LingHang.UIScrollView----</string>
+	</array>
+</dict>
+</plist>
